@@ -1,3 +1,3 @@
 require 'jasmine/headless'
-require 'jasmine/headless/railtie' if defined?(Rails) && Rails::VERSION::MAJOR >= 3
+require 'jasmine/headless/railtie' if defined?(Rails) && defined?(Rails::VERSION) && Rails::VERSION::MAJOR >= 3
 
